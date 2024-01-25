@@ -27,3 +27,9 @@ Plant.create!(
   image_url: "https://raw.githubusercontent.com/lewagon/fullstack-images/master/rails/parks-and-plants/plants/dieffenbachia.jpg",
   garden: other
 )
+
+tags = ["Fruit tree", "Cactus", "Greasy plant", "Flower", "Ferns", "Conifers"]
+
+tags.each do |tag|
+  Tag.create!(name: tag)
+end
